@@ -7,7 +7,7 @@ var cors = require("cors");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// app.use(cors()); // Use this after the variable declaration
+app.use(cors()); // Use this after the variable declaration
 
 async function main() {
   await mongoose.connect(
